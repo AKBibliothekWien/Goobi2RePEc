@@ -10,6 +10,7 @@ import java.nio.file.FileSystems;
 import java.nio.file.Path;
 import java.nio.file.PathMatcher;
 import java.util.List;
+import ak.goobi.pdfmaker.PdfByOrderNos;
 
 
 
@@ -315,7 +316,7 @@ public class WriteRDF {
 					writer.write(System.getProperty("line.separator"));
 					writer.write(System.getProperty("line.separator"));
 
-					new betullam.goobi.pdfmaker.PdfByOrderNos(sourcePdfFolder, imageNos, destinationFolder, destinationFileName);
+					new PdfByOrderNos(sourcePdfFolder, imageNos, destinationFolder, destinationFileName);
 
 				}
 
