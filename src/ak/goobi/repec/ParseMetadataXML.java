@@ -13,7 +13,7 @@ import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
 import ak.goobi.metahelper.main.GoobiMetaHelper;
-import betullam.goobi.oaihelper.classes.Id;
+import ak.goobi.oaihelper.classes.Id;
 
 
 
