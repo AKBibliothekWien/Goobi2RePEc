@@ -186,7 +186,7 @@ public class ParseMetadataXML {
 			String strIssueNo = gmh.getTextValue(document, xpathIssueNo);
 			List<String> pageValues = gmh.getFirstLastLabelByPhysId(document, physIDs);
 			String firstPage = (pageValues.get(0).length() > 0) ? pageValues.get(0).replace("[", "").replace("]", "") : "";
-			String lastPage = (pageValues.get(1).length() > 1) ? pageValues.get(1) : "";
+			String lastPage = (pageValues.get(1).length() > 1) ? pageValues.get(1).replace("[", "").replace("]", "") : "";
 			String strPages = firstPage + "-" + lastPage;
 			List<String> imageNosForPdf = gmh.getOrderNoByPhysId(document, articleID.getPhysIds());
 			List<String> urns = gmh.getUrnsByPhysIds(document, physIDs);
