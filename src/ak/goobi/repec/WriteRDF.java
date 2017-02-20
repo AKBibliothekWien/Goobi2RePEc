@@ -13,7 +13,6 @@ import java.util.List;
 import ak.goobi.pdfmaker.PdfByOrderNos;
 
 
-
 /*
  * This script writes the details of every journal article to one seperate .rdf-file.
  * So for each article there will be written one seperate file.
@@ -176,7 +175,6 @@ public class WriteRDF {
 	public void writeJournalIssue(String pathToMetadataFolder, String configSection, String localPath, String remotePath, String pdfPrefix, boolean pdfNiceUrl,  boolean verbose) {
 		JournalIssue jIssue = new ParseMetadataXML(pathToMetadataFolder, configSection).getIssue();
 		
-
 		// Check if local folder exists
 		try {
 			List<JournalArticle> jArticles = new ParseMetadataXML(pathToMetadataFolder, configSection).getArticles();
@@ -352,6 +350,7 @@ public class WriteRDF {
 		}
 	}
 
+	
 	private String getSourcePdfFolder(String pathToMetadataFolder) {
 		String sourcePdfFolder = null;
 
@@ -392,5 +391,4 @@ public class WriteRDF {
 		}
 		return viewerSourceFolder;
 	}
-
 }
