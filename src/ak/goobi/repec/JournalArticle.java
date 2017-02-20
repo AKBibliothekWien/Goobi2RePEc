@@ -61,8 +61,6 @@ public class JournalArticle {
 		this.setPi(pi);
 	}
 	
-	
-	
 	public List<String> getAuthorNames() {
 		return authorNames;
 	}
@@ -102,27 +100,15 @@ public class JournalArticle {
 	public String getFirstPage() {
 		return firstPage;
 	}
-
-
-
 	public void setFirstPage(String firstPage) {
 		this.firstPage = firstPage;
 	}
-
-
-
 	public String getLastPage() {
 		return lastPage;
 	}
-
-
-
 	public void setLastPage(String lastPage) {
 		this.lastPage = lastPage;
 	}
-
-
-
 	public String getPages() {
 		return pages;
 	}
@@ -177,5 +163,4 @@ public class JournalArticle {
 	public void setPi(String pi) {
 		this.pi = pi;
 	}
-	
 }
